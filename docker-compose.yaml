@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    environment:
+      - CANDIDATE_ID=5c2dcd74-79f0-488c-b1db-261617b09825
