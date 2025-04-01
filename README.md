@@ -1,7 +1,7 @@
 ### Running the Application
 ### Prerequisites
 
-- Python 3.11 or higher
+- Python 3.12 or higher
 - Poetry
 - Docker
 - Docker Compose
@@ -19,7 +19,7 @@
 poetry install
 `
 
-### Run the application:
+#### Run the application:
 
 `
 python -m cross
