@@ -4,8 +4,7 @@ from typing import Literal
 
 import httpx
 from httpx import Headers, HTTPStatusError
-from tenacity import (RetryCallState, retry, stop_after_attempt,
-                      wait_exponential)
+from tenacity import RetryCallState, retry, stop_after_attempt, wait_exponential
 
 from cross.cache import cache
 from cross.models import GoalMapResponse, UpdateMapRequest

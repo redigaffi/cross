@@ -11,7 +11,6 @@ BASE_URL = Config().BASE_URL
 CANDIDATE_ID = "test_candidate_id_"
 
 
-
 @pytest.mark.asyncio
 @respx.mock
 async def test_get_map(client):

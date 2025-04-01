@@ -1,6 +1,7 @@
-import respx
 import pytest
+import respx
 from cashews import cache
+
 from cross.client import CrossmintClient
 from cross.config import Config
 
@@ -15,6 +16,7 @@ def mock_respx():
     respx.mock.clear()
     respx.clear()
     respx.delete("*")
+
 
 @pytest.fixture
 def client():
