@@ -7,6 +7,14 @@ from cross.request_factory import request_factory
 
 
 async def main(crossmint_client: CrossmintClient, candidate_id: str):
+    """
+    Main function to execute the Crossmint challenge
+
+    :param crossmint_client:
+    :param candidate_id:
+    :return:
+    """
+
     logger.info("Starting Crossmint challenge")
     map_ = await crossmint_client.get_map(candidate_id)
 

@@ -1,21 +1,12 @@
-import json
-
-import httpx
 import pytest
 import respx
 from httpx import Response
 
 from cross.app import main
-from cross.client import CrossmintClient
-from cross.models import GoalMapResponse
+from cross.config import Config
 
-BASE_URL = "https://challenge.crossmint.com/api"
+BASE_URL = Config().BASE_URL
 CANDIDATE_ID = "test_candidate_id"
-
-
-@pytest.fixture
-def client():
-    return CrossmintClient(BASE_URL)
 
 
 @pytest.mark.asyncio
